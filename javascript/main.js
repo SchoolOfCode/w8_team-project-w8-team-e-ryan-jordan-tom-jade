@@ -9,40 +9,50 @@
 // 9.
 // 10.
 const mainData = {
-  score:"",
-  userInput:"",
-  ApiResponse:"",
-  questionTimer:"",
-  favUniverse:"",
+    score: 0,
+    userInput: "",
+    ApiResponse: "",
+    favUniverse: "",
+    questionQuote: "",
+    correctAnswer: "",
+    incorrectAnswers: [],
+    bonusTimerCounter: 0,
+    roundsPlayedCounter: 0,
+
+};
+
+
+
+
+
+
+
+
+
+function() {
 
 }
 
-
-
-
-
-
-
-
-
-function (){
+function() {
 
 }
-function (){
-  
+
+function() {
+
 }
-function (){
-  
+
+function() {
+
 }
-function (){
-  
+
+function() {
+
 }
-function (){
-  
+
+function() {
+
 }
-function (){
-  
-}
-function (){
-  
+
+function() {
+
 }
