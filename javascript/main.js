@@ -1,4 +1,4 @@
-// 1.
+// 1. 
 // 2.
 // 3.
 // 4.
@@ -8,6 +8,22 @@
 // 8.
 // 9.
 // 10.
+const mainData = {
+  score:"",
+  userInput:"",
+  ApiResponse:"",
+  questionTimer:"",
+  favUniverse:"",
+
+}
+
+
+
+
+
+
+
+
 
 function (){
 
