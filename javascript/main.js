@@ -1,3 +1,5 @@
+import {StartGame} from "./startGame.js"
+
 const mainData = {
     score: 0,
     userInput: "",
@@ -9,3 +11,4 @@ const mainData = {
     bonusTimerCounter: 0,
     roundsPlayedCounter: 0
 };
+
