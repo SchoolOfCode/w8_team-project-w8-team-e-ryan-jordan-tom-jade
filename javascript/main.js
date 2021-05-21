@@ -1,5 +1,3 @@
-
-
 const mainData = {
     score: 0,
     userInput: "",
