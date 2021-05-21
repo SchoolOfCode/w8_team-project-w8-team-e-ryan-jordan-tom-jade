@@ -50,11 +50,22 @@
   background-position: center;
 
 }
-.page__main__user--input{
+.page__main__user__input{
   width: 90%;
   height: 15%;
-  font-size: 4rem;
   text-align: center;
+}
+.page__main__user__input--text{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.page__main__user__input .fa-hand-paper{
+  position: relative;
+  left: 0;
+  float: right;
+  margin-top: -20px;
+  margin-right: 6px;
 }
 .page__main__selection{
   display: flex;
