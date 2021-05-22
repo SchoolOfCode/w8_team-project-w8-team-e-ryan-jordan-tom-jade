@@ -5,7 +5,7 @@ import { LOTR_API_KEY } from '../config/dev.js';
 import { storeFavUniverse } from './storeFavUniverse.js';
 import { fetchLOTRApi } from './fetchLOTRApi.js';
 import { buildQuestionLayout } from './buildQuestionLayout.js';
-import { buildMultipleAnswers } from `./buildMultipleAnswers.js`;
+import { buildMultipleAnswers } from './buildMultipleAnswers.js';
 import { startTimer} from './startTimer.js';
 
 // Explain let vs const for object
@@ -15,8 +15,8 @@ export const mainData = {
   ApiResponse: '',
   favUniverse: '',
   questionQuote: '',
-  correctAnswer: '',
-  incorrectAnswers: [],
+  correctAnswer: 'Gollum',
+  incorrectAnswers: ['xoxxoox','yyyyyyyy','zzzzzzz', 'fffffff', 'udfhufdhsujahs', 'dfiusdfdfs'],
   bonusTimerCounter: 0,
   roundsPlayedCounter: 0,
 };

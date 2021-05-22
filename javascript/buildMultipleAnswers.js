@@ -49,32 +49,26 @@ export function buildMultipleAnswers() {
   
   // display as buttons
   let answer1 = createNewElement("button", answersArray[0].innerText);
+  answer1.setAttribute("data-name", answersArray[0].innerText);
+
   let answer2 = createNewElement("button", answersArray[1].innerText);
+  answer2.setAttribute("data-name", answersArray[1].innerText);
+
   let answer3 = createNewElement("button", answersArray[2].innerText);
+  answer3.setAttribute("data-name", answersArray[2].innerText);
+
   let answer4 = createNewElement("button", answersArray[3].innerText);
+  answer4.setAttribute("data-name", answersArray[3].innerText);
 
-  // test that buttons appear in HTML randomly
+  // add event listeners
+  answer1.addEventListener("click", checkAnswer);
+  answer2.addEventListener("click", checkAnswer);
+  answer3.addEventListener("click", checkAnswer);
+  answer4.addEventListener("click", checkAnswer);
 
-  document.body.appendChild(answer1);
-  document.body.appendChild(answer2);
-  document.body.appendChild(answer3);
-  document.body.appendChild(answer4);
-
-  // append buttons to ul
-
-  // append answers to answer section (NEED TO AUDIT)
-  // document.querySelector(".page2__main2__answer").appendChild(answer1);
- 
-
-
-
- // document.querySelector("ul").appendChild(answer1);
+  // append buttons to HTML
+  ul.append(answer1, answer2, answer3, answer4);
+  document.querySelector(".page2__main2__bottomhalf__answer").appendChild(ul);
 }
-
-// add event listeners to each button to check answer
-// button.addEventListener("click", checkAnswer);
-
-
-
 
 //"They cursed us" - Gollum (id_5cd99d4bde30eff6ebccfe9e)
