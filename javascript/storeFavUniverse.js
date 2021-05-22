@@ -1,9 +1,5 @@
-import { StartGame } from './startGame';
-
-let favUniverseArrayNodes = document.querySelectorAll('.chosenUniv');
-favUniverseArrayNodes.forEach((node) => {
-  node.addEventListener('click', storeFavUniverse);
-});
+import { StartGame } from './startGame.js';
+import { mainData } from './main.js';
 
 export function storeFavUniverse(event) {
   let favUniverse = event.target.dataset.name;

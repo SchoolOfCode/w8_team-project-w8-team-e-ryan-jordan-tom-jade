@@ -1,10 +1,10 @@
 import { StartGame } from './startGame.js';
 import { getUserName } from './getUserName.js';
 import { LOTR_API_KEY } from '../config/dev.js';
-import { storeFavUniverse } from './storeFavUniverse';
+import { storeFavUniverse } from './storeFavUniverse.js';
 
 // Explain let vs const for object
-const mainData = {
+export const mainData = {
   score: 0,
   userInput: getUserName,
   ApiResponse: '',
@@ -15,3 +15,8 @@ const mainData = {
   bonusTimerCounter: 0,
   roundsPlayedCounter: 0,
 };
+
+let favUniverseArrayNodes = document.querySelectorAll('.chosenUniv');
+favUniverseArrayNodes.forEach((node) => {
+  node.addEventListener('click', storeFavUniverse);
+});
