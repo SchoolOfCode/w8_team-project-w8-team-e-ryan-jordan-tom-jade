@@ -10,7 +10,7 @@ deleteThis.forEach((item)=>{
 
 export function StartGame(event){
   changeHeight()
-  console.log(event.target)
+  console.log(event.target.dataset)
   // add yes / no functions to be called from here 
 
 
@@ -19,7 +19,6 @@ export function StartGame(event){
   function changeHeight(){
     let getStartGameArea = document.querySelector(".page__main__startgame")
     getStartGameArea.style.height = "20%"
-    
   }
 
 }

@@ -81,7 +81,11 @@
   background: url(/images/LOTRplaceholder.png) black no-repeat;
   background-size: contain;
   background-position: center;
-
+}
+.page__main__selection--box1:hover{
+  background: url(/images/LOTRhover.gif) black no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .page__main__selection--box2{
   width: 100%;
