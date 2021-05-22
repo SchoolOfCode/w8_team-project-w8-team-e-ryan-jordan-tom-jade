@@ -92,6 +92,7 @@ export async function buildQuestionLayout() {
   let character =
     characterList[Math.floor(Math.random() * characterList.length)];
   let { dbName, name } = character;
+  mainData.correctAnswer = name;
   console.log(dbName);
   let characterApi = await fetchLOTRApi('character', dbName);
   console.log(characterApi);
@@ -115,14 +116,20 @@ export async function buildQuestionLayout() {
   let questionPageContainer = document.querySelector('.page2');
   questionPageContainer.style.display = 'flex';
 
-  let questionHeading = createNewElement('h2');
-}
+  let dialog = mainData.questionQuote.dialog;
 
-// build headings and rest of page layout
-// call function startTimer()
-// grab info from mainData (**large amount of data and pull out maindata.quote ,
-// maindata.correctAnswer, maindata.incorrecstAnswers**)
-// pick information we need for question
-// call buildMultipleAnswers()
-// call incrementRoundsPlayedCounter(+1)
-// createElements for the question to be displayed and append to domselected skeleton
+  let question = `Which character said: "${dialog}"?`;
+
+  let questionHeading = createNewElement(
+    'h2',
+    question,
+    'question',
+    'question'
+  );
+  let questionContainer = document.querySelector('.page2__header2__box1');
+  questionContainer.appendChild(questionHeading);
+
+  startTimer();
+  buildMultipleAnswers();
+  incrementRoundsPlayedCounter();
+}
