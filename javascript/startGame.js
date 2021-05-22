@@ -19,3 +19,4 @@ export function StartGame(){
   displayYes.style.display = "block"
   
 }
+
