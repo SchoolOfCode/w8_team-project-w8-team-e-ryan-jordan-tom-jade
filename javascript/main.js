@@ -15,8 +15,3 @@ export const mainData = {
   bonusTimerCounter: 0,
   roundsPlayedCounter: 0,
 };
-
-let favUniverseArrayNodes = document.querySelectorAll('.chosenUniv');
-favUniverseArrayNodes.forEach((node) => {
-  node.addEventListener('click', storeFavUniverse);
-});
