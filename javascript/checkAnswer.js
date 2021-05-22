@@ -9,6 +9,7 @@ export function checkAnswer(event) {
   // ^countdown is not accessible from this function
   if (event.target.dataset === mainData.correctAnswer) {
     setPoints();
+    buildQuestionLayout();
   } else {
     buildQuestionLayout();
   }

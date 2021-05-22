@@ -15,4 +15,5 @@ export function startTimer() {
     getTimerBox.innerText = mainData.bonusTimerCounter;
     mainData.bonusTimerCounter--;
   }, 1000);
+  return countdown;
 }

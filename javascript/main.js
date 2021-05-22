@@ -19,6 +19,7 @@ export const mainData = {
   incorrectAnswers: [],
   bonusTimerCounter: 20,
   roundsPlayedCounter: 0,
+  firstQuestion: false,
 };
 
 buildQuestionLayout();

@@ -87,6 +87,8 @@ export async function buildQuestionLayout() {
     return;
   }
 
+  mainData.bonusTimerCounter = 20;
+
   // get list of characters
   let character =
     characterList[Math.floor(Math.random() * characterList.length)];
@@ -143,6 +145,13 @@ export async function buildQuestionLayout() {
   questionContainer.appendChild(questionHeading);
 
   buildMultipleAnswers();
-  startTimer();
+
+  if (mainData.firstQuestion === false) {
+    startTimer();
+    mainData.firstQuestion = true;
+  } else {
+    mainData.bonusTimerCounter = 20;
+  }
+
   incrementRoundsPlayedCounter();
 }
