@@ -1,10 +1,10 @@
-*{
+* {
   padding: 0%;
   margin: 0%;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
 }
-.page{
+.page {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -13,7 +13,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.page__header{
+.page__header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,19 +21,19 @@
   height: 10vh;
   background-color: rgba(161, 161, 207, 0.712);
 }
-.page__header__logo{
+.page__header__logo {
   color: white;
   text-align: center;
   font-size: 1rem;
 }
-.page__header .fa-adjust{
+.page__header .fa-adjust {
   color: red;
 }
-.page__main{
+.page__main {
   height: 90vh;
   background-color: blue;
 }
-.page__main__user{
+.page__main__user {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -41,33 +41,32 @@
   height: 20%;
   background-color: rgba(161, 161, 207, 0.712);
 }
-.page__main__user--image{
+.page__main__user--image {
   width: 40%;
   height: 65%;
   background-color: red;
   background: url(/images/placeholderUserImage.png) no-repeat;
   background-size: contain;
   background-position: center;
-
 }
-.page__main__user__input{
+.page__main__user__input {
   width: 90%;
   height: 15%;
   text-align: center;
 }
-.page__main__user__input--text{
+.page__main__user__input--text {
   height: 100%;
   width: 100%;
   text-align: center;
 }
-.page__main__user__input .fa-hand-paper{
+.page__main__user__input .fa-hand-paper {
   position: relative;
   left: 0;
   float: right;
   margin-top: -20px;
   margin-right: 6px;
 }
-.page__main__selection{
+.page__main__selection {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -75,58 +74,61 @@
   height: 60%;
   background-color: blueviolet;
 }
-.page__main__selection--box1{
+.page__main__selection--box1 {
   width: 100%;
   height: 30%;
   background: url(/images/LOTRplaceholder.png) black no-repeat;
   background-size: contain;
   background-position: center;
 }
-.page__main__selection--box1:hover{
+.page__main__selection--box1:hover {
   background: url(/images/LOTRhover.gif) black no-repeat;
   background-size: contain;
   background-position: center;
 }
-.page__main__selection--box2{
+.page__main__selection--box2 {
   width: 100%;
   height: 30%;
   background: url(/images/StarWars-logo.png) black no-repeat;
   background-size: contain;
   background-position: center;
-
 }
-.page__main__selection--box3{
+.page__main__selection--box3 {
   width: 100%;
   height: 30%;
   background: url(/images/pokemonPlaceholder.png) black no-repeat;
   background-size: contain;
   background-position: center;
 }
-.page__main__startgame{
+.page__main__startgame {
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height:0%;
+  height: 0%;
   transition: 1s;
   background-color: brown;
   background: azure url(/images/questionimages.jpg);
   background-size: cover;
   background-position: center;
 }
-.page__main__startgame--start{
+.page__main__startgame--start {
   height: 38%;
   width: 40%;
   background-color: red;
 }
-.page__main__startgame--yes{
+.page__main__startgame--yes {
   width: 30%;
   height: 28%;
   background-color: burlywood;
 }
-.page__main__startgame--no{
+.page__main__startgame--no {
   width: 30%;
   height: 28%;
   background-color: rgb(170, 222, 135);
+}
+
+.page2 {
+  display: none;
 }
