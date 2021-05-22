@@ -1,12 +1,12 @@
 .page2 {
-  display: flex;
+  display:none;
   flex-direction: column;
   width: 100%;
   height: 100vh;
   /* background-color: azure; */
   margin-left: auto;
   margin-right: auto;
-  background-image: url("/w8_team-project-w8-team-e-ryan-jordan-tom-jade/images/the-shire-70.jpg");
+  background-image: url("/images/the-shire-70.jpg");
   background-size: cover;
 }
 .page2__main2{
