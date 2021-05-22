@@ -70,6 +70,10 @@ export function buildMultipleAnswers() {
   // append buttons to HTML
   ul.append(answer1, answer2, answer3, answer4);
   console.log(ul);
+  let answerContainer = document.querySelector(
+    '.page2__main2__bottomhalf__answer'
+  );
+  answerContainer.innerHTML = '';
   document.querySelector('.page2__main2__bottomhalf__answer').appendChild(ul);
 }
 

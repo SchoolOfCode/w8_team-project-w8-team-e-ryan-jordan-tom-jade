@@ -17,7 +17,7 @@ export const mainData = {
   questionQuote: '',
   correctAnswer: 'Gollum',
   incorrectAnswers: [],
-  bonusTimerCounter: 0,
+  bonusTimerCounter: 20,
   roundsPlayedCounter: 0,
 };
 

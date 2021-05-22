@@ -139,6 +139,7 @@ export async function buildQuestionLayout() {
   let questionContainer = document.querySelector(
     '.page2__main2__tophalf__question'
   );
+  questionContainer.innerHTML = '';
   questionContainer.appendChild(questionHeading);
 
   buildMultipleAnswers();
