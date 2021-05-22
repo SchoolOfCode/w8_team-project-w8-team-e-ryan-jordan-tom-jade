@@ -13,4 +13,7 @@ export function handleStartNo(){
   displayNo.style.display = "none"
   displayUniverse.style.display = "none"
   displayYes.style.display = "none"
+
+  let changeSelectionHight = document.querySelector(".page__main__selection")
+  changeSelectionHight.style.height = "80%"
 }
