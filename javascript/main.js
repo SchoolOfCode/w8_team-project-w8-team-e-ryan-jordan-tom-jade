@@ -1,8 +1,11 @@
+
 import {StartGame} from "./startGame.js"
+import { getUserName } from "./getUserName.js"
+
 
 const mainData = {
     score: 0,
-    userInput: "",
+    userInput: getUserName,
     ApiResponse: "",
     favUniverse: "",
     questionQuote: "",
@@ -10,5 +13,7 @@ const mainData = {
     incorrectAnswers: [],
     bonusTimerCounter: 0,
     roundsPlayedCounter: 0
+
 };
+
 
