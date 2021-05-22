@@ -7,6 +7,7 @@ import { fetchLOTRApi } from './fetchLOTRApi.js';
 import { buildQuestionLayout } from './buildQuestionLayout.js';
 import { buildMultipleAnswers } from './buildMultipleAnswers.js';
 import { startTimer } from './startTimer.js';
+import { fetchPokemonApi } from './fetchPokemonApi.js';
 
 // Explain let vs const for object
 export const mainData = {
@@ -23,5 +24,3 @@ export const mainData = {
 };
 
 buildQuestionLayout();
-
-
