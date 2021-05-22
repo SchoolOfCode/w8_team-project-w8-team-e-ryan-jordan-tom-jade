@@ -8,11 +8,11 @@
 
     get value of input and set the mainData.userInput and set it to the main screen & gamescreen
 
-## 3. StoreFavUniverse(){}
+## 3. StoreFavUniverse(){} ✔️
 
     so getting getting users input for addEventListener and storing it on the main data object and bring us to page once StarGame has been called
 
-## 4. StartGame(){}
+## 4. StartGame(){} ✔️
 
     once clicked show yes/no options to enter question page if (No) clicked wipe stored favUniverse .
 
@@ -23,11 +23,11 @@ adds two popup functions to be displayed (yes)/(no)
     so toggle from front screen to questionaire screen
     call buildQuestionLayout()
 
-## 5. handleStartNo(){}
+## 5. handleStartNo(){} ✔️
 
     wipes stored fav universe from object saved data
 
-## 6. buildQuestionLayout(){}
+## 6. buildQuestionLayout(){} ✔️
 
     if roundsPlayedCounter = 10 then call gameOver()
     return (in the if statement)
@@ -41,7 +41,7 @@ adds two popup functions to be displayed (yes)/(no)
     call incrementRoundsPlayedCounter(+1)
     createElements for the question to be displayed and append to domselected skeleton
 
-## 7. buildMultipleAnswers(){}
+## 7. buildMultipleAnswers(){} ✔️
 
     Create a ul
     Create li's (4)
@@ -54,7 +54,7 @@ adds two popup functions to be displayed (yes)/(no)
     Append li's to ul
     Append ul to section answer container
 
-## 8. checkAnswer(event){}
+## 8. checkAnswer(event){} ✔️
 
     clear timer clearInterval
     function to check answers event.target.dataset
@@ -63,7 +63,7 @@ adds two popup functions to be displayed (yes)/(no)
 
 if incorrect recall buildQuestionLayout()
 
-## 9. setPoints(){}
+## 9. setPoints(){} ✔️
 
     maindata.score += by 10 points (correct answer )
     check timer for bonus point if the question was answered within 5 second
@@ -72,7 +72,7 @@ if incorrect recall buildQuestionLayout()
     increment maindata.roundsPlayedCounter + (by 1)
     call buildQuestionLayout() (next round)
 
-## 10. startTimer (){}
+## 10. startTimer (){} ✔️
 
     create variable with setInterval(()=>{-maindata.bonusTimerCounter}){
     }
@@ -80,7 +80,7 @@ if incorrect recall buildQuestionLayout()
     check if the mainData.bonusTimerCounter has gone to zero
     if yes then call buildQuestionLayout()
 
-## 11. incrementRoundsPlayedCounter (){}
+## 11. incrementRoundsPlayedCounter (){} ✔️
 
     On each round played setPoints calls this function
     increase mainData.roundsPlayedCounter by 1 (+)
