@@ -1,4 +1,7 @@
+
+import {StartGame} from "./startGame.js"
 import { getUserName } from "./getUserName.js"
+
 
 const mainData = {
     score: 0,
@@ -10,4 +13,7 @@ const mainData = {
     incorrectAnswers: [],
     bonusTimerCounter: 0,
     roundsPlayedCounter: 0
+
 };
+
+
