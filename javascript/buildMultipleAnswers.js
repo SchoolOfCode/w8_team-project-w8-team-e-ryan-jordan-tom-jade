@@ -1,9 +1,6 @@
-//API access token (LOTR): MtE3FIlC6oApnuyWQX7X
-
 import { mainData } from './main.js';
 import { createNewElement } from './createNewElement.js';
 import { checkAnswer } from './checkAnswer.js';
-// import { LOTR_API_KEY } from '../config/dev.js';
 
 export function buildMultipleAnswers() {
   // create ul for answer layout
@@ -76,5 +73,3 @@ export function buildMultipleAnswers() {
   answerContainer.innerHTML = '';
   document.querySelector('.page2__main2__bottomhalf__answer').appendChild(ul);
 }
-
-//"They cursed us" - Gollum (id_5cd99d4bde30eff6ebccfe9e)
