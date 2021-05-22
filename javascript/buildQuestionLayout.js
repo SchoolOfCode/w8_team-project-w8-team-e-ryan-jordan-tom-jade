@@ -82,26 +82,24 @@ let characterList = [
 ];
 
 export async function buildQuestionLayout() {
-  console.log(mainData);
   if (mainData.roundsPlayedCounter === 10) {
     gameOver();
     return;
   }
+
+  mainData.bonusTimerCounter = 20;
 
   // get list of characters
   let character =
     characterList[Math.floor(Math.random() * characterList.length)];
   let { dbName, name } = character;
   mainData.correctAnswer = name;
-  console.log(dbName);
+
   let characterApi = await fetchLOTRApi('character', dbName);
-  console.log(characterApi);
+
   let id = characterApi.docs[0]._id;
 
-  console.log(characterList);
-
   let quotes = await fetchLOTRApi('quote', name, id);
-  console.log(quotes);
 
   let loop = true;
   while (loop === true) {
@@ -120,16 +118,40 @@ export async function buildQuestionLayout() {
 
   let question = `Which character said: "${dialog}"?`;
 
+  // for loop for 3 iterations
+
+  let falseAnswers = characterList.filter(
+    (item) => item.name !== mainData.correctAnswer
+  );
+  console.log(falseAnswers);
+  console.log(mainData.correctAnswer);
+
+  for (let i = 0; i < 3; i++) {
+    let randomCharacter =
+      falseAnswers[Math.floor(Math.random() * characterList.length)];
+    mainData.incorrectAnswers.push(randomCharacter);
+  }
+
   let questionHeading = createNewElement(
     'h2',
     question,
     'question',
     'question'
   );
-  let questionContainer = document.querySelector('.page2__header2__box1');
+  let questionContainer = document.querySelector(
+    '.page2__main2__tophalf__question'
+  );
+  questionContainer.innerHTML = '';
   questionContainer.appendChild(questionHeading);
 
-  startTimer();
   buildMultipleAnswers();
+
+  if (mainData.firstQuestion === false) {
+    startTimer();
+    mainData.firstQuestion = true;
+  } else {
+    mainData.bonusTimerCounter = 20;
+  }
+
   incrementRoundsPlayedCounter();
 }

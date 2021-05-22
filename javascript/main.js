@@ -6,7 +6,7 @@ import { storeFavUniverse } from './storeFavUniverse.js';
 import { fetchLOTRApi } from './fetchLOTRApi.js';
 import { buildQuestionLayout } from './buildQuestionLayout.js';
 import { buildMultipleAnswers } from './buildMultipleAnswers.js';
-import { startTimer} from './startTimer.js';
+import { startTimer } from './startTimer.js';
 
 // Explain let vs const for object
 export const mainData = {
@@ -16,11 +16,12 @@ export const mainData = {
   favUniverse: '',
   questionQuote: '',
   correctAnswer: 'Gollum',
-  incorrectAnswers: ['xoxxoox','yyyyyyyy','zzzzzzz', 'fffffff', 'udfhufdhsujahs', 'dfiusdfdfs'],
-  bonusTimerCounter: 0,
+  incorrectAnswers: [],
+  bonusTimerCounter: 20,
   roundsPlayedCounter: 0,
+  firstQuestion: false,
 };
 
 buildQuestionLayout();
 
-buildMultipleAnswers();
+
