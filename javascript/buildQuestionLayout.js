@@ -5,6 +5,7 @@ import { startTimer } from './startTimer.js';
 import { incrementRoundsPlayedCounter } from './incrementRoundsPlayedCounter.js';
 import { createNewElement } from './createNewElement.js';
 import { fetchLOTRApi } from './fetchLOTRApi.js';
+import { fetchPokemonApi } from './fetchPokemonApi.js';
 
 let characterList = [
   {
@@ -89,48 +90,64 @@ export async function buildQuestionLayout() {
 
   mainData.bonusTimerCounter = 20;
 
-  // get list of characters
-  let character =
-    characterList[Math.floor(Math.random() * characterList.length)];
-  let { dbName, name } = character;
-  mainData.correctAnswer = name;
+  // LOTR code
+  if (mainData.activeUniverse === 'LOTR') {
+    let character =
+      characterList[Math.floor(Math.random() * characterList.length)];
+    let { dbName, name } = character;
+    mainData.correctAnswer = name;
 
-  let characterApi = await fetchLOTRApi('character', dbName);
+    let characterApi = await fetchLOTRApi('character', dbName);
 
-  let id = characterApi.docs[0]._id;
+    let id = characterApi.docs[0]._id;
 
-  let quotes = await fetchLOTRApi('quote', name, id);
+    let quotes = await fetchLOTRApi('quote', name, id);
 
-  let loop = true;
-  while (loop === true) {
-    let quote = quotes.docs[Math.floor(Math.random() * quotes.docs.length)];
-    if (quote.dialog.length > 30) {
-      mainData.questionQuote = quote;
-      loop = false;
+    let loop = true;
+    while (loop === true) {
+      let quote = quotes.docs[Math.floor(Math.random() * quotes.docs.length)];
+      if (quote.dialog.length > 30) {
+        mainData.questionQuote = quote;
+        loop = false;
+      }
+    }
+
+    let dialog = mainData.questionQuote.dialog;
+
+    let question = `Which character said: "${dialog}"?`;
+
+    let falseAnswers = characterList.filter(
+      (item) => item.name !== mainData.correctAnswer
+    );
+
+    for (let i = 0; i < 3; i++) {
+      let randomCharacter =
+        falseAnswers[Math.floor(Math.random() * characterList.length)];
+      mainData.incorrectAnswers.push(randomCharacter);
+    }
+  }
+
+  if (mainData.activeUniverse === 'pokemon') {
+    let allPokemon = await fetchPokemonApi();
+    let id = Math.floor(Math.random() * 151) + 1;
+    let pokemon = await fetchPokemonApi(id);
+    let question = `Which pokemon is this??`;
+
+    // need to store as pokemonImage image src from pokemon
+    // need to create img element
+    // set src as pokemonImage
+
+    // create incorectAnswers array
+    for (let i = 0; i < 3; i++) {
+      let randomPokemon =
+        allPokemon.results[Math.floor(Math.random() * pokemon.length)].name;
+      mainData.incorrectAnswers.push(randomPokemon);
     }
   }
 
   // check universe that has been clicked and adapt styling
   let questionPageContainer = document.querySelector('.page2');
   questionPageContainer.style.display = 'flex';
-
-  let dialog = mainData.questionQuote.dialog;
-
-  let question = `Which character said: "${dialog}"?`;
-
-  // for loop for 3 iterations
-
-  let falseAnswers = characterList.filter(
-    (item) => item.name !== mainData.correctAnswer
-  );
-  console.log(falseAnswers);
-  console.log(mainData.correctAnswer);
-
-  for (let i = 0; i < 3; i++) {
-    let randomCharacter =
-      falseAnswers[Math.floor(Math.random() * characterList.length)];
-    mainData.incorrectAnswers.push(randomCharacter);
-  }
 
   let questionHeading = createNewElement(
     'h2',
