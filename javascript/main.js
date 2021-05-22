@@ -3,6 +3,7 @@ import { getUserName } from './getUserName.js';
 import { LOTR_API_KEY } from '../config/dev.js';
 import { storeFavUniverse } from './storeFavUniverse.js';
 import { fetchLOTRApi } from './fetchLOTRApi.js';
+import { buildQuestionLayout } from './buildQuestionLayout.js';
 
 // Explain let vs const for object
 export const mainData = {
@@ -12,9 +13,9 @@ export const mainData = {
   favUniverse: '',
   questionQuote: '',
   correctAnswer: '',
-  incorrectAnswers: ['1', '2', 345679013],
+  incorrectAnswers: [],
   bonusTimerCounter: 0,
   roundsPlayedCounter: 0,
 };
 
-fetchLOTRApi('');
+buildQuestionLayout();
