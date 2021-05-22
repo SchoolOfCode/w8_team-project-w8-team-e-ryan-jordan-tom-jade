@@ -1,16 +1,15 @@
 // make page start game area once universe is clicked
 import {mainData} from "./main.js"
+
 export function StartGame(){
 
   let favUnipick = mainData.favUniverse
   let startbutton = document.querySelector(".page__main__startgame--start")
   startbutton.innerText = favUnipick
-  // add yes / no functions to be called from here 
-
-  // 2. This is to show the button and change the high of the button area
-
+  console.log("hello")
   let getStartGameArea = document.querySelector(".page__main__startgame")
   getStartGameArea.style.height = "20%"
+
   let displayUniverse = document.querySelector(".page__main__startgame--start")
   let displayNo = document.querySelector(".page__main__startgame--yes")
   let displayYes = document.querySelector(".page__main__startgame--no")
