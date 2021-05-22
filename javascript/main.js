@@ -5,13 +5,13 @@ import { storeFavUniverse } from './storeFavUniverse.js';
 
 // Explain let vs const for object
 export const mainData = {
-  score: 0,
-  userInput: getUserName,
-  ApiResponse: '',
-  favUniverse: '',
-  questionQuote: '',
-  correctAnswer: '',
-  incorrectAnswers: [],
-  bonusTimerCounter: 0,
-  roundsPlayedCounter: 0,
+    score: 0,
+    userInput: "",
+    ApiResponse: '',
+    favUniverse: '',
+    questionQuote: '',
+    correctAnswer: '',
+    incorrectAnswers: [],
+    bonusTimerCounter: 0,
+    roundsPlayedCounter: 0,
 };
