@@ -4,7 +4,7 @@
   ## 1. gameData  ✔️
     mainData global object  
 
- ## 2.  getInputValue(){}
+ ## 2.  getInputValue(){} ✔️
     get value of input and set the mainData.userInput and set it to the main screen & gamescreen
 
   ## 3. StoreFavUniverse(){}
