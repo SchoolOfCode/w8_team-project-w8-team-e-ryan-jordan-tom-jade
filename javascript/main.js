@@ -5,6 +5,7 @@ import { LOTR_API_KEY } from '../config/dev.js';
 import { storeFavUniverse } from './storeFavUniverse.js';
 import { fetchLOTRApi } from './fetchLOTRApi.js';
 import { buildQuestionLayout } from './buildQuestionLayout.js';
+import { buildMultipleAnswers } from `./buildMultipleAnswers.js`;
 import { startTimer} from './startTimer.js';
 
 // Explain let vs const for object
@@ -21,3 +22,5 @@ export const mainData = {
 };
 
 buildQuestionLayout();
+
+buildMultipleAnswers();
