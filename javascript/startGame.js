@@ -7,8 +7,15 @@ export function StartGame(){
   let startbutton = document.querySelector(".page__main__startgame--start")
   startbutton.innerText = favUnipick
   console.log("hello")
+
+  let changeSelectionHight = document.querySelector(".page__main__selection")
+  changeSelectionHight.style.height = "60%"
+
+
   let getStartGameArea = document.querySelector(".page__main__startgame")
   getStartGameArea.style.height = "20%"
+  
+
 
   let displayUniverse = document.querySelector(".page__main__startgame--start")
   let displayNo = document.querySelector(".page__main__startgame--yes")
@@ -16,6 +23,5 @@ export function StartGame(){
   displayNo.style.display = "block"
   displayUniverse.style.display = "block"
   displayYes.style.display = "block"
-  
 }
 
