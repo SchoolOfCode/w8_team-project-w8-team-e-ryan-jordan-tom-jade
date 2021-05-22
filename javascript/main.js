@@ -21,6 +21,7 @@ export const mainData = {
   bonusTimerCounter: 20,
   roundsPlayedCounter: 0,
   firstQuestion: false,
+  activeUniverse: 'LOTR',
 };
 
 buildQuestionLayout();
