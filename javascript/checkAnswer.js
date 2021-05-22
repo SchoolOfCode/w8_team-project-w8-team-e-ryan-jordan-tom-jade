@@ -7,7 +7,7 @@ export function checkAnswer(event) {
   console.log(event.target.dataset, 'event');
   //   clearInterval(countdown);
   // ^countdown is not accessible from this function
-  if (event.target.dataset === mainData.correctAnswer) {
+  if (event.target.dataset.name === mainData.correctAnswer) {
     setPoints();
     buildQuestionLayout();
   } else {
