@@ -12,24 +12,23 @@ import { fetchPokemonApi } from './fetchPokemonApi.js';
 import { gameOver } from './gameOver.js';
 import { getStarWarsNames } from './fetchStarWarsName.js';
 
-
 // Explain let vs const for object
 export const mainData = {
-    score: 0,
-    userInput: getUserName,
-    ApiResponse: '',
-    favUniverse: '',
-    questionQuote: '',
-    correctAnswer: 'Gollum',
-    incorrectAnswers: [],
-    bonusTimerCounter: 20,
-    roundsPlayedCounter: 0,
-    firstQuestion: false,
-    activeUniverse: 'LOTR',
-    listOfStarWarsNames:""
+  score: 0,
+  userInput: getUserName,
+  ApiResponse: '',
+  favUniverse: '',
+  questionQuote: '',
+  correctAnswer: '',
+  incorrectAnswers: [],
+  bonusTimerCounter: 20,
+  roundsPlayedCounter: 0,
+  roundsCompleted: {
+    LOTR: false,
+    pokemon: false,
+  },
+  firstQuestion: false,
+  activeUniverse: '',
+  listOfStarWarsNames:""
 };
 
-
-
-getStarWarsNames()
-console.log(mainData)
