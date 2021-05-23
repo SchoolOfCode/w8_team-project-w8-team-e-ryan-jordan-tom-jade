@@ -9,6 +9,8 @@ import { buildQuestionLayout } from './buildQuestionLayout.js';
 import { buildMultipleAnswers } from './buildMultipleAnswers.js';
 import { startTimer } from './startTimer.js';
 import { fetchPokemonApi } from './fetchPokemonApi.js';
+import { gameOver } from './gameOver.js';
+
 
 
 // Explain let vs const for object
@@ -25,3 +27,4 @@ export const mainData = {
     firstQuestion: false,
     activeUniverse: 'LOTR',
 };
+

@@ -1,8 +1,9 @@
 import { mainData } from "./main.js"
+import { changeUserLogo } from "./ChangeUserLogo.js"
 export function getUserName() {
     let userInput = document.querySelector(".page__main__user__input--text").value
     mainData.userInput = userInput
-
+    changeUserLogo()
     console.log(mainData)
 
 
