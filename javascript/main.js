@@ -18,10 +18,14 @@ export const mainData = {
   ApiResponse: '',
   favUniverse: '',
   questionQuote: '',
-  correctAnswer: 'Gollum',
+  correctAnswer: '',
   incorrectAnswers: [],
   bonusTimerCounter: 20,
   roundsPlayedCounter: 0,
+  roundsCompleted: {
+    LOTR: false,
+    pokemon: false,
+  },
   firstQuestion: false,
-  activeUniverse: 'pokemon',
+  activeUniverse: '',
 };

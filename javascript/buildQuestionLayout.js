@@ -83,7 +83,10 @@ let characterList = [
 ];
 
 export async function buildQuestionLayout() {
-  if (mainData.roundsPlayedCounter === 10) {
+  if (
+    mainData.roundsCompleted.LOTR === true &&
+    mainData.roundsCompleted.pokemon === true
+  ) {
     gameOver();
     return;
   }
@@ -122,6 +125,7 @@ export async function buildQuestionLayout() {
     let falseAnswers = characterList.filter(
       (item) => item.name !== mainData.correctAnswer
     );
+    console.log(falseAnswers);
 
     for (let i = 0; i < 3; i++) {
       let randomCharacter =
@@ -130,6 +134,7 @@ export async function buildQuestionLayout() {
     }
   }
 
+  // pokemon code
   if (mainData.activeUniverse === 'pokemon') {
     let allPokemon = await fetchPokemonApi();
 
@@ -144,11 +149,6 @@ export async function buildQuestionLayout() {
     img = createNewElement('img', '', 'img-pokemon');
     img.src = imgSrc;
 
-    console.log(allPokemon.results.length);
-    console.log(Math.floor(Math.random() * allPokemon.results.length));
-    console.log(
-      allPokemon.results[Math.floor(Math.random() * allPokemon.results.length)]
-    );
     // create incorectAnswers array
     for (let i = 0; i < 3; i++) {
       let randomPokemon =
@@ -157,7 +157,6 @@ export async function buildQuestionLayout() {
         ].name;
       mainData.incorrectAnswers.push(randomPokemon);
     }
-    console.log(mainData);
   }
 
   // check universe that has been clicked and adapt styling
@@ -180,8 +179,6 @@ export async function buildQuestionLayout() {
     questionContainer.appendChild(img);
   }
 
-  buildMultipleAnswers();
-
   if (mainData.firstQuestion === false) {
     startTimer();
     mainData.firstQuestion = true;
@@ -190,4 +187,5 @@ export async function buildQuestionLayout() {
   }
 
   incrementRoundsPlayedCounter();
+  buildMultipleAnswers();
 }
