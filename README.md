@@ -87,4 +87,14 @@ if incorrect recall buildQuestionLayout()
 
 ## fetchPokemonApi(){}
 
-## fetchStarWarsApi(){}
+## fetchStarWarsApi(){}  
+  
+
+
+
+## 1. check for(if favuniverse == StarWars)
+
+## 2. call starwars api , bring back bunch of people
+    https://swapi.dev/api/people
+## 3. get each 
+
