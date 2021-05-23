@@ -18,5 +18,7 @@ export function gameOver() {
 }
 
 export function goBackToMenu(){
+  let turnOnPage1 = document.querySelector(".page")
+    turnOnPage1.style.display = 'flex';
   displayPage.style.display = "none"
 }
