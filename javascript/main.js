@@ -10,6 +10,7 @@ import { buildMultipleAnswers } from './buildMultipleAnswers.js';
 import { startTimer } from './startTimer.js';
 import { fetchPokemonApi } from './fetchPokemonApi.js';
 import { gameOver } from './gameOver.js';
+import { getStarWarsNames } from './fetchStarWarsName.js';
 
 // Explain let vs const for object
 export const mainData = {
@@ -28,4 +29,6 @@ export const mainData = {
   },
   firstQuestion: false,
   activeUniverse: '',
+  listOfStarWarsNames:""
 };
+
