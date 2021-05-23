@@ -124,7 +124,7 @@ export async function buildQuestionLayout() {
 
     for (let i = 0; i < 3; i++) {
       let randomCharacter =
-        falseAnswers[Math.floor(Math.random() * characterList.length)];
+        falseAnswers[Math.floor(Math.random() * characterList.length)].name;
       mainData.incorrectAnswers.push(randomCharacter);
     }
   }
@@ -135,7 +135,7 @@ export async function buildQuestionLayout() {
     let id = Math.floor(Math.random() * 151) + 1;
 
     let pokemon = await fetchPokemonApi(id);
-
+    mainData.correctAnswer = pokemon.name;
     question = `Which pokemon is this?`;
 
     // need to store as pokemonImage image src from pokemon
@@ -152,6 +152,7 @@ export async function buildQuestionLayout() {
         ].name;
       mainData.incorrectAnswers.push(randomPokemon);
     }
+    console.log(mainData);
   }
 
   // check universe that has been clicked and adapt styling
