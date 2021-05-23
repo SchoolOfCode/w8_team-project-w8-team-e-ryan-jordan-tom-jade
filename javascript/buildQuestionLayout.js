@@ -89,6 +89,7 @@ export async function buildQuestionLayout() {
   }
 
   mainData.bonusTimerCounter = 20;
+  mainData.incorrectAnswers = [];
   let question;
   let img;
 
@@ -138,12 +139,16 @@ export async function buildQuestionLayout() {
     mainData.correctAnswer = pokemon.name;
     question = `Which pokemon is this?`;
 
-    // need to store as pokemonImage image src from pokemon
     let imgSrc = pokemon.sprites.front_default;
 
     img = createNewElement('img', '', 'img-pokemon');
     img.src = imgSrc;
 
+    console.log(allPokemon.results.length);
+    console.log(Math.floor(Math.random() * allPokemon.results.length));
+    console.log(
+      allPokemon.results[Math.floor(Math.random() * allPokemon.results.length)]
+    );
     // create incorectAnswers array
     for (let i = 0; i < 3; i++) {
       let randomPokemon =
