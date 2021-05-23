@@ -1,3 +1,5 @@
+import { mainData } from './main.js';
+
 export function incrementRoundsPlayedCounter() {
-  console.log('incrementRound called');
+  mainData.roundsPlayedCounter++;
 }

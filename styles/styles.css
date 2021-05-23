@@ -24,14 +24,14 @@
 .page__header__logo {
   color: white;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .page__header .fa-adjust {
   color: red;
 }
 .page__main {
   height: 90vh;
-  background-color: blue;
+  background-color: white;
 }
 .page__main__user {
   display: flex;
@@ -39,15 +39,16 @@
   justify-content: space-evenly;
   align-items: center;
   height: 20%;
-  background-color: rgba(161, 161, 207, 0.712);
+  background: url(/images/puzzle.jpg);
+  background-size: cover;
+
 }
 .page__main__user--image {
+  text-align: center;
+  font-size: 5rem;
   width: 40%;
   height: 65%;
-  background-color: red;
-  background: url(/images/placeholderUserImage.png) no-repeat;
-  background-size: contain;
-  background-position: center;
+  color: red;
 }
 .page__main__user__input {
   width: 90%;
@@ -57,6 +58,11 @@
 .page__main__user__input--text {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
+  background-color: #ff0022;
+  background-image: linear-gradient(0deg, #ff0022 0%, #ffc2cc 46%, #ff0022 100%);
+
+
   text-align: center;
 }
 .page__main__user__input .fa-hand-paper {
@@ -66,39 +72,49 @@
   margin-top: -20px;
   margin-right: 6px;
 }
-.page__main__selection {
+.page__main__selection{
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 60%;
+  font-size: 3rem;
+  height: 80%;
   background-color: blueviolet;
+  color: white;
 }
 .page__main__selection--box1 {
   width: 100%;
-  height: 30%;
-  background: url(/images/LOTRplaceholder.png) black no-repeat;
+  height: 100%;
+  color: gold;
+  text-shadow: goldenrod 1px 2px;
+  background:url(/images/gandalf1.jpg) ;
   background-size: contain;
   background-position: center;
-}
-.page__main__selection--box1:hover {
-  background: url(/images/LOTRhover.gif) black no-repeat;
-  background-size: contain;
-  background-position: center;
+  border-top: white thin solid;
+  border-bottom: white thin solid;
 }
 .page__main__selection--box2 {
   width: 100%;
-  height: 30%;
-  background: url(/images/StarWars-logo.png) black no-repeat;
-  background-size: contain;
+  height: 100%;
+  color: yellow;
+  background-image:url(/images/space.jpg) ;
   background-position: center;
+  background-size: cover;
+  border-top: white thin solid;
+  border-bottom: white thin solid;
 }
 .page__main__selection--box3 {
   width: 100%;
-  height: 30%;
-  background: url(/images/pokemonPlaceholder.png) black no-repeat;
+  height: 100%;
+  background-color: rgb(76, 107, 105);
+  background:url(/images/poke.jpg) ;
   background-size: contain;
   background-position: center;
+  border-top: white thin solid;
+  border-bottom: white thin solid;
+  color: yellow;
+  text-shadow: blue 5px 5px;
 }
 .page__main__startgame {
   display: flex;
@@ -107,28 +123,32 @@
   justify-content: space-evenly;
   align-items: center;
   height: 0%;
-  transition: 1s;
-  background-color: brown;
-  background: azure url(/images/questionimages.jpg);
+  transition: 0.5s;
+  background: url(/images/puzzle.jpg);
   background-size: cover;
-  background-position: center;
+  
 }
-.page__main__startgame--start {
+.page__main__startgame--start{
+  display: none;
   height: 38%;
   width: 40%;
-  background-color: red;
+  font-size: larger;
+  background-color: #ff0022;
+  background-image: linear-gradient(0deg, #ff0022 0%, #ffc2cc 46%, #ff0022 100%);
+
+  color: aliceblue;
+  border-radius: 10px;
 }
-.page__main__startgame--yes {
-  width: 30%;
-  height: 28%;
-  background-color: burlywood;
-}
-.page__main__startgame--no {
+.page__main__startgame--yes{
+  display: none;
+
   width: 30%;
   height: 28%;
   background-color: rgb(170, 222, 135);
 }
-
-.page2 {
+.page__main__startgame--no{
   display: none;
+  width: 30%;
+  height: 28%;
+  background-color: orange;
 }

@@ -1,3 +1,19 @@
+import { buildQuestionLayout } from './buildQuestionLayout.js';
+import { mainData } from './main.js';
+
+let timer = 20;
+let getTimerBox = document.querySelector('.page2__main2__tophalf__timer');
+
 export function startTimer() {
-  console.log('startTimer called');
+  let countdown = setInterval(() => {
+    if (mainData.bonusTimerCounter === 0) {
+      buildQuestionLayout();
+      clearInterval(countdown);
+      mainData.bonusTimerCounter = 20;
+      return;
+    }
+    getTimerBox.innerText = mainData.bonusTimerCounter;
+    mainData.bonusTimerCounter--;
+  }, 1000);
+  return countdown;
 }
