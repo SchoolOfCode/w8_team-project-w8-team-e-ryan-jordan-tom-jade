@@ -91,6 +91,7 @@ export async function buildQuestionLayout() {
     return;
   }
 
+  // initialise data
   mainData.bonusTimerCounter = 20;
   mainData.incorrectAnswers = [];
   let question;
@@ -127,6 +128,7 @@ export async function buildQuestionLayout() {
     );
     console.log(falseAnswers);
 
+    // Need nested while loop here to check that false asnwer is not equal to correct answer
     for (let i = 0; i < 3; i++) {
       let randomCharacter =
         falseAnswers[Math.floor(Math.random() * characterList.length)].name;

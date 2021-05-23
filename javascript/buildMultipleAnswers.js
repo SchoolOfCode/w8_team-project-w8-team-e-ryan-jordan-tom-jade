@@ -43,7 +43,6 @@ export function buildMultipleAnswers() {
     answersArray.sort(() => Math.random() - 0.5);
   }
   shuffle();
-  console.log(answersArray);
 
   // display as buttons
   let answer1 = createNewElement('button', answersArray[0].innerText);
@@ -66,7 +65,7 @@ export function buildMultipleAnswers() {
 
   // append buttons to HTML
   ul.append(answer1, answer2, answer3, answer4);
-  console.log(ul);
+
   let answerContainer = document.querySelector(
     '.page2__main2__bottomhalf__answer'
   );
