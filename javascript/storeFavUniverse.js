@@ -7,8 +7,8 @@ favUniverseArrayNodes.forEach((node) => {
 });
 
 export function storeFavUniverse(event) {
-  let favUniverse = event.target.dataset.name;
-  mainData.favUniverse = favUniverse;
+  mainData.favUniverse = event.target.dataset.name;
+  mainData.activeUniverse = event.target.dataset.name;
   console.log(mainData);
   StartGame();
 }

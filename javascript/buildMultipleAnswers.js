@@ -18,19 +18,19 @@ export function buildMultipleAnswers() {
   // Need to ensure no repeat answers!!!
   let li_2 = createNewElement(
     'li',
-    mainData.incorrectAnswers[0].name,
+    mainData.incorrectAnswers[0],
     'incorrect-answer',
     'answer-2'
   );
   let li_3 = createNewElement(
     'li',
-    mainData.incorrectAnswers[1].name,
+    mainData.incorrectAnswers[1],
     'incorrect-answer',
     'answer-3'
   );
   let li_4 = createNewElement(
     'li',
-    mainData.incorrectAnswers[2].name,
+    mainData.incorrectAnswers[2],
     'incorrect-answer',
     'answer-4'
   );
@@ -43,7 +43,6 @@ export function buildMultipleAnswers() {
     answersArray.sort(() => Math.random() - 0.5);
   }
   shuffle();
-  console.log(answersArray);
 
   // display as buttons
   let answer1 = createNewElement('button', answersArray[0].innerText);
@@ -66,7 +65,7 @@ export function buildMultipleAnswers() {
 
   // append buttons to HTML
   ul.append(answer1, answer2, answer3, answer4);
-  console.log(ul);
+
   let answerContainer = document.querySelector(
     '.page2__main2__bottomhalf__answer'
   );
