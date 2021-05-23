@@ -11,20 +11,17 @@ import { startTimer } from './startTimer.js';
 import { fetchPokemonApi } from './fetchPokemonApi.js';
 import { gameOver } from './gameOver.js';
 
-
-
 // Explain let vs const for object
 export const mainData = {
-    score: 0,
-    userInput: getUserName,
-    ApiResponse: '',
-    favUniverse: '',
-    questionQuote: '',
-    correctAnswer: 'Gollum',
-    incorrectAnswers: [],
-    bonusTimerCounter: 20,
-    roundsPlayedCounter: 0,
-    firstQuestion: false,
-    activeUniverse: 'LOTR',
+  score: 0,
+  userInput: getUserName,
+  ApiResponse: '',
+  favUniverse: '',
+  questionQuote: '',
+  correctAnswer: 'Gollum',
+  incorrectAnswers: [],
+  bonusTimerCounter: 20,
+  roundsPlayedCounter: 0,
+  firstQuestion: false,
+  activeUniverse: 'pokemon',
 };
-

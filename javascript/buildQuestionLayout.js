@@ -131,19 +131,25 @@ export async function buildQuestionLayout() {
 
   if (mainData.activeUniverse === 'pokemon') {
     let allPokemon = await fetchPokemonApi();
+
     let id = Math.floor(Math.random() * 151) + 1;
+
     let pokemon = await fetchPokemonApi(id);
-    question = `Which pokemon is this??`;
+
+    question = `Which pokemon is this?`;
 
     // need to store as pokemonImage image src from pokemon
     let imgSrc = pokemon.sprites.front_default;
+
     img = createNewElement('img', '', 'img-pokemon');
     img.src = imgSrc;
 
     // create incorectAnswers array
     for (let i = 0; i < 3; i++) {
       let randomPokemon =
-        allPokemon.results[Math.floor(Math.random() * pokemon.length)].name;
+        allPokemon.results[
+          Math.floor(Math.random() * allPokemon.results.length)
+        ].name;
       mainData.incorrectAnswers.push(randomPokemon);
     }
   }
