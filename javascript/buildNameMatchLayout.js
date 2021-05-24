@@ -16,8 +16,8 @@ export async function matchNamesAppendToScreen(){
       let firstName = item.split(" ")[0]
       let secoundName = item.split(" ")[1]
 
-      let CreateDiv1 = createNewElement("button", firstName,`${index}`)
-      let CreateDiv2 = createNewElement("button", secoundName,`${index}`)
+      let CreateDiv1 = createNewElement("h6", firstName,`${index}`)
+      let CreateDiv2 = createNewElement("h6", secoundName,`${index}`)
 
       getTopArea.append(CreateDiv1) 
       getbottomArea.append(CreateDiv2) 

@@ -15,7 +15,7 @@ import { getStarWarsNames } from './fetchStarWarsName.js';
 // Explain let vs const for object
 export const mainData = {
   score: 0,
-  userInput: getUserName,
+  userInput:"",
   ApiResponse: '',
   favUniverse: '',
   questionQuote: '',
@@ -30,5 +30,6 @@ export const mainData = {
   firstQuestion: false,
   activeUniverse: '',
   listOfStarWarsNames:""
+
 };
 
