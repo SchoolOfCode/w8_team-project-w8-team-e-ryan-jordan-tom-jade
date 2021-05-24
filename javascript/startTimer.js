@@ -1,6 +1,6 @@
 import { buildQuestionLayout } from './buildQuestionLayout.js';
 import { mainData } from './main.js';
-
+import { gameOver} from "./gameOver.js"
 let timer = 20;
 let getTimerBox = document.querySelector('.page2__main2__tophalf__timer');
 
@@ -11,7 +11,9 @@ export function startTimer() {
         buildQuestionLayout();
       }
       if(mainData.activeUniverse == 'StarWars'){
-        console.log("hi jord")
+        clearInterval(countdown);
+        gameOver()
+        
       }
       clearInterval(countdown);
       mainData.bonusTimerCounter = 20;
