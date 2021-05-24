@@ -2,7 +2,7 @@ import {mainData} from "./main.js"
 
 export async function getStarWarsNames(){
 
-  let randomPage = Math.floor(Math.random()*6)
+  let randomPage = Math.floor(Math.random()*5)
   
   async function fetchNames(){
     let pageResults = `http://swapi.dev/api/people/?page=${randomPage+1}`
