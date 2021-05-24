@@ -9,8 +9,9 @@ export function gameOver() {
   let getUserArea = document.querySelector(".gameOver__main__content--user")
   getUserArea.innerText = mainData.userInput
   displayPage.style.display = "flex"
-  unDisplayPage2 = "none"
+  unDisplayPage2.display = "none"
 
+  console.log("cheese")
 
   let getPoints = document.querySelector(".gameOver__main__content--points")
   getPoints.innerText = `${mainData.score} Points`

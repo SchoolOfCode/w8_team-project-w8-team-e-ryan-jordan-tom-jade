@@ -7,7 +7,12 @@ let getTimerBox = document.querySelector('.page2__main2__tophalf__timer');
 export function startTimer() {
   let countdown = setInterval(() => {
     if (mainData.bonusTimerCounter === 0) {
-      buildQuestionLayout();
+      if(mainData.activeUniverse == 'LOTR'){
+        buildQuestionLayout();
+      }
+      if(mainData.activeUniverse == 'StarWars'){
+        console.log("hi jord")
+      }
       clearInterval(countdown);
       mainData.bonusTimerCounter = 20;
       return;
