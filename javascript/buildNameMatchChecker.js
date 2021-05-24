@@ -1,5 +1,6 @@
 import {mainData} from "./main.js"
 import {startTimer} from "./startTimer.js"
+import { setPoints} from "./setPoints.js"
 
 let clickedTopHalfElement 
 let clickedBottomHalfElement 
@@ -34,7 +35,7 @@ export async function NameMatchChecker(){
   // 2. if 2 are selected then check if they are the same class name
   // 2. if they are the same class remove them from the screen and add points to the mainData.score and set the 2 clicked to 0 to unhighlight selected
   // 3. if they are wrong unhighlight
-  startTimer()
+  
   
   let getClassFromTophalf = document.querySelectorAll(".page2__main2__tophalf__question h6")
 
@@ -46,7 +47,7 @@ export async function NameMatchChecker(){
       TwoItemsClicked++
 
       if(clickedTopHalfElement == clickedBottomHalfElement && TwoItemsClicked == 2){
-        mainData.score +=10
+        setPoints()
 
         // let getElementToRemoveTop = document.querySelector(`.page2__main2__tophalf__question .${e.target.className}`)
 

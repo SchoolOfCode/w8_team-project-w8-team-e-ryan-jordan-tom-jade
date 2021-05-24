@@ -66,6 +66,8 @@
   padding: 2px;
   width:50px;
   height: 50px;
+  background-color: rgba(240, 248, 255,0.8);
+  col
 }
 .page2__main2__bottomhalf h6:hover{
   background-color: aqua;

@@ -4,7 +4,7 @@ import { createNewElement } from "./createNewElement.js"
 import { NameMatchChecker} from "./buildNameMatchChecker.js"
 
 export async function matchNamesAppendToScreen(){
-  if(mainData.activeUniverse == "StarWars"){
+
     await getStarWarsNames()
     console.log("activated starwars")
     let getbottomArea = document.querySelector(".page2__main2__bottomhalf")
@@ -38,7 +38,7 @@ export async function matchNamesAppendToScreen(){
       bottomNamedClass.push(CreateDiv2) 
     })
     randomizeTheNodesArrays()
-  }
+  
   NameMatchChecker()
 
 }
