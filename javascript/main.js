@@ -27,6 +27,7 @@ export const mainData = {
   roundsCompleted: {
     LOTR: false,
     pokemon: false,
+    starWars: false,
   },
   firstQuestion: false,
   activeUniverse: '',

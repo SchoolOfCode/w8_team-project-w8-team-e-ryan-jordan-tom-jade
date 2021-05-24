@@ -6,6 +6,7 @@ import { incrementRoundsPlayedCounter } from './incrementRoundsPlayedCounter.js'
 import { createNewElement } from './createNewElement.js';
 import { fetchLOTRApi } from './fetchLOTRApi.js';
 import { fetchPokemonApi } from './fetchPokemonApi.js';
+import { matchNamesAppendToScreen} from "./buildNameMatchLayout.js"
 
 let characterList = [
   {
@@ -85,7 +86,8 @@ let characterList = [
 export async function buildQuestionLayout() {
   if (
     mainData.roundsCompleted.LOTR === true &&
-    mainData.roundsCompleted.pokemon === true
+    mainData.roundsCompleted.pokemon === true &&
+    mainData.roundsCompleted.starWars === true
   ) {
     gameOver();
     return;
@@ -187,7 +189,11 @@ export async function buildQuestionLayout() {
   } else {
     mainData.bonusTimerCounter = 20;
   }
-
+  if(mainData.activeUniverse == "LOTR" || mainData.activeUniverse == "pokemon" ){
+    buildMultipleAnswers();
+  }else{
+    matchNamesAppendToScreen()
+  }
   incrementRoundsPlayedCounter();
-  buildMultipleAnswers();
+  
 }
