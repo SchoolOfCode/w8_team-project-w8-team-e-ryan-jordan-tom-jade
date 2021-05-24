@@ -69,6 +69,7 @@
 }
 .page2__main2__bottomhalf h6:hover{
   background-color: aqua;
+  cursor: pointer;
 }
 .page2__main2__bottomhalf__answer{
   height: 60%;
