@@ -48,11 +48,13 @@
   padding: 8px;
   word-wrap: break-word;
   overflow-y: auto;
+  
 
 }
 .page2__main2__tophalf__question h6{
   padding: 2px;
   width:55px;
+  height: 55px;
   margin: 2px;
 }
 .page2__main2__tophalf__question h6:hover{
@@ -91,6 +93,9 @@
   cursor: pointer;
 }
 .page2__main2__bottomhalf__answer{
+  justify-content: center;
+  flex-wrap:wrap ;
+  display: flex;
   height: 90%;
   width: 90%;
   background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));

@@ -7,7 +7,7 @@ export async function matchNamesAppendToScreen(){
 
     await getStarWarsNames()
     console.log("activated starwars")
-    let getbottomArea = document.querySelector(".page2__main2__bottomhalf")
+    let getbottomArea = document.querySelector(".page2__main2__bottomhalf__answer")
     getbottomArea.innerHTML = ""
     let getTopArea = document.querySelector(".page2__main2__tophalf__question")
     getTopArea.innerHTML = ""
