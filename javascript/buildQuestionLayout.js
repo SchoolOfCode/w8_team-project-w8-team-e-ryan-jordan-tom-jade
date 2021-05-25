@@ -197,5 +197,8 @@ export async function buildQuestionLayout() {
   } else {
     matchNamesAppendToScreen();
   }
+  if (mainData.activeUniverse === 'StarWars') {
+    incrementRoundsPlayedCounter('starwars');
+  }
   incrementRoundsPlayedCounter();
 }

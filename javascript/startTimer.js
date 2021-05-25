@@ -1,29 +1,25 @@
 import { buildQuestionLayout } from './buildQuestionLayout.js';
 import { mainData } from './main.js';
 import { gameOver } from './gameOver.js';
-let timer = 20;
+
 let getTimerBox = document.querySelector('.page2__main2__tophalf__timer');
 
 export function startTimer(time) {
-  if (mainData.activeUniverse == 'StarWars') {
+  if (mainData.activeUniverse === 'StarWars') {
     mainData.bonusTimerCounter = 40;
   }
 
   let countdown = setInterval(() => {
     if (mainData.bonusTimerCounter <= 0) {
       if (
-        mainData.activeUniverse === 'LOTR' ||
-        mainData.activeUniverse === 'pokemon'
+        mainData.roundsCompleted.LOTR === true &&
+        mainData.roundsCompleted.pokemon === true &&
+        mainData.roundsCompleted.starWars === true
       ) {
-        buildQuestionLayout();
-      }
-      if (mainData.activeUniverse === 'StarWars') {
-        clearInterval(countdown);
         gameOver();
+        return;
       }
-      // clearInterval(countdown);
-      // mainData.bonusTimerCounter = 20;
-      // return;
+      buildQuestionLayout();
     }
     getTimerBox.innerText = mainData.bonusTimerCounter;
     mainData.bonusTimerCounter--;
