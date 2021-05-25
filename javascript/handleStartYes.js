@@ -9,14 +9,16 @@ export function handleStartYes() {
     // if click = yes then toggle to gameplay screen 
     // turn off the start screen 
     if(mainData.userInput <=1){
-        console.log("add a username")
-    }else{
-        console.log(mainData.userInput)
-        let turnOffStartPage = document.querySelector(".page")
-        turnOffStartPage.style.display = 'none';
-        
-        buildQuestionLayout();
-        //select the screen container ("page") off for the start screen call the build question ()
+        mainData.userInput = "John Doe"
     }
+    let placeScoreOnScreen = document.querySelector(".page2__main2__tophalf__round")
+    placeScoreOnScreen.innerText = mainData.score
+    console.log(mainData.userInput)
+    let turnOffStartPage = document.querySelector(".page")
+    turnOffStartPage.style.display = 'none';
+        
+    buildQuestionLayout();
+    //select the screen container ("page") off for the start screen call the build question ()
+    
     
 }
