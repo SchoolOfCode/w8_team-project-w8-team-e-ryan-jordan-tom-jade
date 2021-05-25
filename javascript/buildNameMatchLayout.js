@@ -11,6 +11,9 @@ export async function matchNamesAppendToScreen(){
     getbottomArea.innerHTML = ""
     let getTopArea = document.querySelector(".page2__main2__tophalf__question")
     getTopArea.innerHTML = ""
+    let questionExplainer = document.createElement("h2");
+    questionExplainer.innerText = "Match The First Name To The Correct Last Name";
+    getTopArea.append(questionExplainer);
 
     function randomizeTheNodesArrays(){
       topNamedClass.sort(() => Math.random() - 0.5);
