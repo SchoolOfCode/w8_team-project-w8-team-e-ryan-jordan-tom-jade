@@ -6,7 +6,7 @@ import { incrementRoundsPlayedCounter } from './incrementRoundsPlayedCounter.js'
 import { createNewElement } from './createNewElement.js';
 import { fetchLOTRApi } from './fetchLOTRApi.js';
 import { fetchPokemonApi } from './fetchPokemonApi.js';
-import { matchNamesAppendToScreen} from "./buildNameMatchLayout.js"
+import { matchNamesAppendToScreen } from './buildNameMatchLayout.js';
 
 let characterList = [
   {
@@ -133,7 +133,7 @@ export async function buildQuestionLayout() {
     // Need nested while loop here to check that false asnwer is not equal to correct answer
     for (let i = 0; i < 3; i++) {
       let randomCharacter =
-        falseAnswers[Math.floor(Math.random() * characterList.length)].name;
+        falseAnswers[Math.floor(Math.random() * falseAnswers.length)].name;
       mainData.incorrectAnswers.push(randomCharacter);
     }
   }
@@ -189,11 +189,13 @@ export async function buildQuestionLayout() {
   } else {
     mainData.bonusTimerCounter = 20;
   }
-  if(mainData.activeUniverse == "LOTR" || mainData.activeUniverse == "pokemon" ){
+  if (
+    mainData.activeUniverse == 'LOTR' ||
+    mainData.activeUniverse == 'pokemon'
+  ) {
     buildMultipleAnswers();
-  }else{
-    matchNamesAppendToScreen()
+  } else {
+    matchNamesAppendToScreen();
   }
   incrementRoundsPlayedCounter();
-  
 }
