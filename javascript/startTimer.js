@@ -17,6 +17,7 @@ export function startTimer(time) {
         mainData.roundsCompleted.starWars === true
       ) {
         gameOver();
+        clearInterval(countdown);
         return;
       }
       buildQuestionLayout();
