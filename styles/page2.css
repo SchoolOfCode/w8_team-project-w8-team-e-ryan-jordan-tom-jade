@@ -35,14 +35,22 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
   height: 50%;
   width: 70%;
   background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
   border: thick solid white;
   border-radius: 25px;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+  overflow:auto
+}
+.page2__main2__tophalf__question img{
+  align-items: center;
+  width: 200px;
+  height: 160px;
 }
 .page2__main2__tophalf__question .question{
+  
   width: 100%;
   font-size: 0.9rem;
   padding: 8px;

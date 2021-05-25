@@ -27,9 +27,5 @@ export function goBackToMenu(){
   mainData.score = 0
   // mainData.roundsCompleted.LOTR = false
   // mainData.roundsCompleted.pokemon = false
-  if(mainData.activeUniverse == "StarWars"){
-    document.querySelector(".page2__main2__bottomhalf").innerHTML = "<div class='page2__main2__bottomhalf__answer'></div>"
-    
-  }
   handleStartNo()
 }
