@@ -1,176 +1,185 @@
 * {
-  padding: 0%;
-  margin: 0%;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
+
+body {
+    background-color: #101010;
+}
+
 .page {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
 }
+
 .page__header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 10vh;
-  background-color: rgba(161, 161, 207, 0.712);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
 }
+
 .page__header__logo {
-  color: white;
-  text-align: center;
-  font-size: 1.5rem;
-  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-  color: #FFFFFF;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #871604 0px 0px 20px, #871604 0px 0px 30px, #871604 0px 0px 40px, #871604 0px 0px 50px, #871604 0px 0px 75px;
+    color: #FFFFFF;
 }
+
 .page__header .fa-adjust {
-  color: red;
+    color: red;
 }
+
 .page__main {
-  height: 90vh;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
+    height: 90vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
 }
+
 .page__main__user {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20%;
 }
+
 .page__main__user--image {
-  text-align: center;
-  font-size: 3rem;
-  width: 40%;
-  height: 65%;
+    text-align: center;
+    font-size: 2rem;
+    width: 40%;
+    height: 55%;
 }
-.page__main__user--image--initial{
-  text-align: center;
-  color: #ff0022;
-  background-color: #ffc2cc;
-  width: 90px;
-  height: 90px;
-  border: red thin solid;
-  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
-  border-radius: 100%;
-  margin-left: auto;
-  margin-right: auto;
+
+.page__main__user--image--initial {
+    text-align: center;
+    color: #ff0022;
+    background-color: #ffc2cc;
+    width: 70px;
+    height: 70px;
+    border: red thin solid;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .page__main__user__input {
-  width: 90%;
-  height: 15%;
-  text-align: center;
+    width: 90%;
+    height: 15%;
+    text-align: center;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #871604 0px 0px 20px, #871604 0px 0px 30px, #871604 0px 0px 40px, #871604 0px 0px 50px, #871604 0px 0px 75px;
 }
+
 .page__main__user__input--text {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  background-color: #ff0022;
-  background-image: linear-gradient(0deg, #ff0022 0%, #ffc2cc 46%, #ff0022 100%);
-
-
-  text-align: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: solid thick #000000;
+    background-image: linear-gradient(0deg, #871604 0%, #ffc2cc 46%, #871604 100%);
+    text-align: center;
 }
+
 .page__main__user__input .fa-hand-paper {
-  position: relative;
-  left: 0;
-  float: right;
-  margin-top: -20px;
-  margin-right: 6px;
+    position: relative;
+    left: 0;
+    float: right;
+    margin-top: -20px;
+    margin-right: 6px;
 }
-.page__main__selection{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 3rem;
-  height: 80%;
+
+.page__main__selection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+    height: 80%;
 }
+
 .page__main__selection--box1 {
-  width: 100%;
-  height: 100%;
-  background: #333333;
-  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
-  color: #FFFFFF;
-  background:url(/images/gandalf1.jpg) ;
-  background-size: contain;
-  background-position: center;
-  border-radius: 10px;
-  border-top: white thin solid;
-  border-bottom: white thin solid;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    color: #FFFFFF;
+    background: url(/images/gandalf1.jpg);
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
 }
+
 .page__main__selection--box2 {
-  width: 100%;
-  height: 100%;
-  color: #000000;
-  letter-spacing: .1em;
-  background: #FFFFFF;
-  text-shadow: 2px 2px 0 #ffff00, 2px -2px 0 #ffff00, -2px 2px 0 #ffff00, -2px -2px 0 #ffff00, 2px 0px 0 #ffff00, 0px 2px 0 #ffff00, -2px 0px 0 #ffff00, 0px -2px 0 #ffff00;
-
-  background: #FFFFFF;
-
-
-
-
-  background-image:url(/images/space.jpg) ;
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  border-top: white thin solid;
-  border-bottom: white thin solid;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    letter-spacing: .1em;
+    background: #FFFFFF;
+    text-shadow: 2px 2px 0 #ffff00, 2px -2px 0 #ffff00, -2px 2px 0 #ffff00, -2px -2px 0 #ffff00, 2px 0px 0 #ffff00, 0px 2px 0 #ffff00, -2px 0px 0 #ffff00, 0px -2px 0 #ffff00;
+    background: black;
+    background-image: url(/images/space.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
 }
+
 .page__main__selection--box3 {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(76, 107, 105);
-  background:url(/images/poke.jpg) ;
-  background-size: contain;
-  background-position: center;
-  border-radius: 10px;
-  border-top: white thin solid;
-  border-bottom: white thin solid;
-  color: yellow;
-  text-shadow: blue 5px 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(76, 107, 105);
+    background: url(/images/poke.jpg);
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+    color: yellow;
+    text-shadow: blue 5px 5px;
 }
-.page__main__startgame {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 0%;
-  transition: 0.5s;
-  
-}
-.page__main__startgame--start{
-  display: none;
-  height: 38%;
-  width: 40%;
-  font-size: larger;
-  background-color: #ff0022;
-  background-image: linear-gradient(0deg, #ff0022 0%, #ffc2cc 46%, #ff0022 100%);
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
-  color: aliceblue;
-  border-radius: 10px;
-}
-.page__main__startgame--yes{
-  display: none;
-  width: 30%;
-  height: 28%;
-  background-color: #46a83d;
-  background-image: linear-gradient(180deg, #46a83d 0%, #c6cfc6 33%, #46a83d 66%);
 
+.page__main__startgame {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 0%;
+    transition: 0.5s;
 }
-.page__main__startgame--no{
-  display: none;
-  width: 30%;
-  height: 28%;
-  background-color: orange;
+
+.page__main__startgame--start {
+    display: none;
+    height: 38%;
+    width: 40%;
+    font-size: larger;
+    background-color: #ff0022;
+    background-image: linear-gradient(0deg, #ff0022 0%, #ffc2cc 46%, #ff0022 100%);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.page__main__startgame--yes {
+    display: none;
+    width: 30%;
+    height: 28%;
+    background-color: #46a83d;
+    background-image: linear-gradient(180deg, #46a83d 0%, #c6cfc6 33%, #46a83d 66%);
+}
+
+.page__main__startgame--no {
+    display: none;
+    width: 30%;
+    height: 28%;
+    background-color: orange;
 }
