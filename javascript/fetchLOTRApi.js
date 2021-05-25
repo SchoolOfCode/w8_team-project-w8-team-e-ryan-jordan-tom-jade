@@ -1,4 +1,4 @@
-import { LOTR_API_KEY } from '../config/dev.js';
+import { LOTR_API_KEY } from '../config/prod.js';
 
 export async function fetchLOTRApi(searchOption, name, id) {
   console.log(searchOption);
