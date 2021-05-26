@@ -7,7 +7,8 @@ document.querySelector(".page__main__startgame--yes").addEventListener("click", 
 export function handleStartYes() {
     //listen for yes or no click from start screen
     // if click = yes then toggle to gameplay screen 
-    // turn off the start screen 
+    // turn off the start screen
+    mainData.bonusTimerCounter = 20
     if(mainData.userInput <=1){
         mainData.userInput = "John Doe"
     }

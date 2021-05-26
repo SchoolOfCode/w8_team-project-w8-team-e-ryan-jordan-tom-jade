@@ -8,6 +8,7 @@
   margin-right: auto;
   background-image: url("/images/the-shire-70.jpg");
   background-size: cover;
+  background-position: center;
 }
 .page2__main2{
   display: flexbox;
@@ -37,18 +38,25 @@
   color: aliceblue;
 }
 .page2__main2__tophalf__question{
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 95%;
   width: 95%;
-  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
   border: thick solid white;
   border-radius: 25px;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
   overflow:auto
+}
+.page2__main2__tophalf__question h2{
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #871604 0px 0px 20px, #871604 0px 0px 30px, #871604 0px 0px 40px, #871604 0px 0px 50px, #871604 0px 0px 75px;
+  
+
 }
 .page2__main2__tophalf__question img{
   align-items: center;
@@ -71,10 +79,12 @@
   display: flex;
   font-size: 1rem;
   padding: 1px;
-  min-width:70px;
-  height: 90px;
+  min-width:60px;
+  height: 60px;
   margin: 2px;
   border-radius: 10px;
+  background-color: rgba(240, 248, 255,0.8);
+  
 }
 .page2__main2__tophalf__question h6:hover{
   background-color: aqua;
@@ -107,12 +117,12 @@
 }
 .page2__main2__bottomhalf h6{
   text-align: center;
-
+  background-color: rgba(240, 248, 255,0.8);
   min-width: 70px;
   display: flex;
   font-size: 1rem;
   border-radius: 20px;
-  background-color: rgba(240, 248, 255,0.8);
+  
   overflow-y: hidden;
   margin: 2px;
   align-items: center;
@@ -133,7 +143,7 @@
   display: flex;
   height: 90%;
   width: 90%;
-  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
   border-radius: 25px;
   border: aliceblue outset thick;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);

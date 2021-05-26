@@ -8,7 +8,7 @@ export function startTimer(time) {
   if (mainData.activeUniverse === 'StarWars') {
     mainData.bonusTimerCounter = 40;
   }
-
+  console.log("timer is called")
   let countdown = setInterval(() => {
     if (mainData.bonusTimerCounter <= 0) {
       if (
@@ -17,6 +17,7 @@ export function startTimer(time) {
         mainData.roundsCompleted.starWars === true
       ) {
         gameOver();
+        clearInterval(countdown);
         return;
       }
       buildQuestionLayout();
