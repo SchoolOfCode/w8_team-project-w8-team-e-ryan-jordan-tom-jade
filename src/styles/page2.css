@@ -6,7 +6,7 @@
   /* background-color: azure; */
   margin-left: auto;
   margin-right: auto;
-  background-image: url("/images/the-shire-70.jpg");
+  background-image: url("/images/the-shire-70.jpg"),url("/src/images/the-shire-70.jpg");
   background-size: cover;
   background-position: center;
 }
