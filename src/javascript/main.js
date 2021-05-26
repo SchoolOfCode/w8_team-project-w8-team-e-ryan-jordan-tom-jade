@@ -14,7 +14,12 @@ import { NameMatchChecker } from './buildNameMatchChecker.js';
 
 // Explain let vs const for object
 export const mainData = {
-  score: 0,
+  score: {
+    total: 0,
+    LOTR: 0,
+    pokemon: 0,
+    starWars: 0,
+  },
   userInput: '',
   ApiResponse: '',
   favUniverse: '',
