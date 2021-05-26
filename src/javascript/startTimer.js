@@ -17,7 +17,7 @@ export function startTimer(time) {
         mainData.roundsCompleted.starWars === true
       ) {
         gameOver();
-        clearInterval(countdown);
+        // removed clear interval so timer runs on replay (w/o page refresh)
         return;
       }
       buildQuestionLayout();
