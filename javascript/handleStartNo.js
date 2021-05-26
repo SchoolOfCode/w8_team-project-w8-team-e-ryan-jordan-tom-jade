@@ -16,7 +16,4 @@ export function handleStartNo(){
 
   let changeSelectionHight = document.querySelector(".page__main__selection")
   changeSelectionHight.style.height = "80%"
-  mainData.roundsCompleted.LOTR = false
-  mainData.roundsCompleted.pokemon = false
-  mainData.roundsCompleted.starWars = false
 }

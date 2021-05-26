@@ -6,9 +6,9 @@ let getTimerBox = document.querySelector('.page2__main2__tophalf__timer');
 
 export function startTimer(time) {
   if (mainData.activeUniverse === 'StarWars') {
-    mainData.bonusTimerCounter = 40;
+    mainData.bonusTimerCounter = 4000;
   }
-
+  console.log("timer is called")
   let countdown = setInterval(() => {
     if (mainData.bonusTimerCounter <= 0) {
       if (

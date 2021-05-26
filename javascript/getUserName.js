@@ -10,6 +10,15 @@ export function getUserName() {
     //get value of input and set the mainData.userInput and set it to the main screen & gamescreen
 
 }
+
+let pressEnter = document.querySelector(".page__main__user__input--text")
+pressEnter.addEventListener("keydown",(event)=>{
+    
+    if(event.key == "Enter"){
+        getUserName()
+    }
+    
+})
 let userNameButton = document.querySelector(".fa-hand-paper");
 userNameButton.addEventListener("click", getUserName);
 // let requestOptions = {
