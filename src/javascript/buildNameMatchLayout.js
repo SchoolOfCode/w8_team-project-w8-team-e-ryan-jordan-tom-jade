@@ -24,11 +24,6 @@ export async function matchNamesAppendToScreen(){
       bottomNamedClass.forEach((item)=>{
         getbottomArea.append(item)
       })
-      let hoverAquaAllSquares = document.querySelectorAll(".page2__main2 h6");
-      hoverAquaAllSquares.forEach((item) => {
-        item.addEventListener("mouseover", (e) => item.style.backgroundColor = "aqua")
-        item.addEventListener("mouseout", (e) => item.style.backgroundColor = "white")
-      })
     }
 
     let topNamedClass = []

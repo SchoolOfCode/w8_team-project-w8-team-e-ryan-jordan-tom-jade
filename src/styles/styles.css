@@ -72,28 +72,38 @@
 }
 
 .page__main__user__input {
-    width: 90%;
-    height: 15%;
+    display: flex;
+    width: auto;
+    height: 30%;
     text-align: center;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #871604 0px 0px 20px, #871604 0px 0px 30px, #871604 0px 0px 40px, #871604 0px 0px 50px, #871604 0px 0px 75px;
+    font-size: 1.5rem;
 }
 
 .page__main__user__input--text {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    border: solid thick #000000;
-    background: linear-gradient(to left, #ffc2cc, #333333);
+    height: 85%;
+    width: 80%;
+    font-size: 1.5rem;
+    background-color: rgba(163,138,134,0.2);
+    border: transparent;
     text-align: center;
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    color: #FFFFFF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.page__main__user__input--text:focus{
+    outline: none;
 }
 
 .page__main__user__input .fa-hand-paper {
-    position: relative;
-    left: 0;
-    float: right;
-    margin-top: -24px;
-    margin-right: 6px;
+    display: flex;
+    padding-left: 20px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .page__main__selection {
@@ -104,6 +114,7 @@
     align-items: center;
     font-size: 3rem;
     height: 80%;
+    background-color: black;
 }
 
 .page__main__selection--box1 {
@@ -112,7 +123,7 @@
     background: #333333;
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
     color: #FFFFFF;
-    background: url(/images/gandalf1.jpg);
+    background: url(/images/mounatain.png), url(/src/images/mounatain.png) black;
     background-size: contain;
     background-position: center;
     border-radius: 10px;
@@ -123,12 +134,12 @@
     height: 100%;
     color: #000000;
     letter-spacing: .1em;
-    background: #FFFFFF;
     text-shadow: 2px 2px 0 #ffff00, 2px -2px 0 #ffff00, -2px 2px 0 #ffff00, -2px -2px 0 #ffff00, 2px 0px 0 #ffff00, 0px 2px 0 #ffff00, -2px 0px 0 #ffff00, 0px -2px 0 #ffff00;
     background: black;
-    background-image: url(/images/space.jpg);
+    background-image: url(/images/space.jpg),url(/src/images/space.jpg);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     border-radius: 10px;
 }
 
@@ -136,7 +147,7 @@
     width: 100%;
     height: 100%;
     background-color: rgb(76, 107, 105);
-    background: url(/images/poke.jpg);
+    background: url(/images/poke.jpg),url(/src/images/poke.jpg);
     background-size: contain;
     background-position: center;
     border-radius: 10px;
