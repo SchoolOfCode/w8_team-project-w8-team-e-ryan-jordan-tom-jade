@@ -1,0 +1,28 @@
+{
+  "name": "w8_team-project-w8-team-e-ryan-jordan-tom-jade",
+  "version": "1.0.0",
+  "description": "mainData global object",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server src -p 8080",
+    "netlify": "./node_modules/.bin/netlify",
+    "debug": "netlify dev --inspect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SchoolOfCode/w8_team-project-w8-team-e-ryan-jordan-tom-jade.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SchoolOfCode/w8_team-project-w8-team-e-ryan-jordan-tom-jade/issues"
+  },
+  "homepage": "https://github.com/SchoolOfCode/w8_team-project-w8-team-e-ryan-jordan-tom-jade#readme",
+  "devDependencies": {
+    "netlify-cli": "^3.31.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

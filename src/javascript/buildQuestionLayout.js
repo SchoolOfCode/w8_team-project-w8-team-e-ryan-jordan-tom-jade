@@ -110,7 +110,7 @@ export async function buildQuestionLayout() {
     let { dbName, name } = character;
     mainData.correctAnswer = name;
 
-    let characterApi = await fetchLOTRApi('character', dbName);
+    let characterApi = await fetchLOTRApi('character', dbName, 'none');
 
     let id = characterApi.docs[0]._id;
 
