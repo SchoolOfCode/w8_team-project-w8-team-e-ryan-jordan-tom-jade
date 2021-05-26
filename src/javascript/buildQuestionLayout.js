@@ -101,8 +101,7 @@ export async function buildQuestionLayout() {
 
   // LOTR code
   if (mainData.activeUniverse === 'LOTR') {
-
-    let universeImage = document.querySelector(".page2");
+    let universeImage = document.querySelector('.page2');
     universeImage.style.backgroundImage = "url('/images/the-shire-70.jpg')";
 
     let character =
@@ -144,7 +143,7 @@ export async function buildQuestionLayout() {
 
   // pokemon code
   if (mainData.activeUniverse === 'pokemon') {
-    let universeImage = document.querySelector(".page2");
+    let universeImage = document.querySelector('.page2');
     universeImage.style.backgroundImage = "url('/images/poke.jpg')";
 
     let allPokemon = await fetchPokemonApi();
@@ -169,6 +168,11 @@ export async function buildQuestionLayout() {
       mainData.incorrectAnswers.push(randomPokemon);
     }
   }
+
+  let placeScoreOnScreen = document.querySelector(
+    '.page2__main2__tophalf__round'
+  );
+  placeScoreOnScreen.innerText = mainData.roundsPlayedCounter;
 
   // check universe that has been clicked and adapt styling
   let questionPageContainer = document.querySelector('.page2');
@@ -205,7 +209,7 @@ export async function buildQuestionLayout() {
     matchNamesAppendToScreen();
   }
   if (mainData.activeUniverse === 'StarWars') {
-    let universeImage = document.querySelector(".page2");
+    let universeImage = document.querySelector('.page2');
     universeImage.style.backgroundImage = "url('/images/space.jpg')";
     incrementRoundsPlayedCounter('starwars');
   }
