@@ -5,10 +5,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    background-color: #101010;
-}
-
 .page {
     display: flex;
     flex-direction: column;
@@ -65,7 +61,7 @@ body {
 .page__main__user--image--initial {
     text-align: center;
     color: #ff0022;
-    background-color: #ffc2cc;
+    background: linear-gradient(to left, #ffc2cc, #333333);
     width: 70px;
     height: 70px;
     border: red thin solid;
@@ -87,8 +83,9 @@ body {
     width: 100%;
     border-radius: 10px;
     border: solid thick #000000;
-    background-image: linear-gradient(0deg, #871604 0%, #ffc2cc 46%, #871604 100%);
+    background: linear-gradient(to left, #ffc2cc, #333333);
     text-align: center;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
 }
 
 .page__main__user__input .fa-hand-paper {
@@ -155,14 +152,13 @@ body {
     align-items: center;
     height: 0%;
     transition: 0.5s;
+    
 }
-
 .page__main__startgame--start {
     display: none;
     height: 48%;
     width: 100%;
     font-size: medium;
-    background-color: ;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
     color: aliceblue;
     border-radius: 10px;
