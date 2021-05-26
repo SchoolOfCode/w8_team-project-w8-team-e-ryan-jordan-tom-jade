@@ -7,8 +7,7 @@ export function StartGame() {
 
     let favUnipick = mainData.favUniverse
     let startbutton = document.querySelector(".page__main__startgame--start")
-    startbutton.innerText = "You Have Chosen " +
-        favUnipick;
+    startbutton.innerText = "You Have Chosen " + favUnipick;
 
 
     let changeSelectionHight = document.querySelector(".page__main__selection")

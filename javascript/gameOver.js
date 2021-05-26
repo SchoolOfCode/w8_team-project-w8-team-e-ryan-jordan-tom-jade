@@ -25,7 +25,8 @@ export function goBackToMenu(){
     turnOnPage1.style.display = 'flex';
   displayPage.style.display = "none"
   mainData.score = 0
-  // mainData.roundsCompleted.LOTR = false
-  // mainData.roundsCompleted.pokemon = false
+  mainData.roundsCompleted.LOTR = false
+  mainData.roundsCompleted.pokemon = false
+  mainData.roundsCompleted.starWars = false
   handleStartNo()
 }
