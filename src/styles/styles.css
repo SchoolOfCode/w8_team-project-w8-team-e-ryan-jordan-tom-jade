@@ -124,8 +124,9 @@
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
     color: #FFFFFF;
     background: url(/images/mounatain.png), url(/src/images/mounatain.png) black no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: repeat-x;
     border-radius: 10px;
 }
 
@@ -138,6 +139,7 @@
     background: black;
     background-image: url(/images/space.jpg),url(/src/images/space.jpg);
     background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: center;
     background-size: contain;
     border-radius: 10px;
