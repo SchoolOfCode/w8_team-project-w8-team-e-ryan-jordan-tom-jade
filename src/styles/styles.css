@@ -144,6 +144,9 @@
     background-size: contain;
     border-radius: 10px;
 }
+.page__main__selection--box2:hover{
+    cursor: url(smiley.gif), url(myBall.cur), auto;
+}
 
 .page__main__selection--box3 {
     width: 100%;
