@@ -171,3 +171,15 @@ button:hover {
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
   background-color:rgb(255, 170, 0, 0.3);
 }
+
+@media only screen and (min-width: 600px) {
+  .page2__main2__tophalf__question,#question{
+    font-size:1.9rem ;
+  }
+  .page2__main2__tophalf__question h6{
+    font-size: 2rem;
+  }
+  .page2__main2__bottomhalf__answer h6,.page2__main2__bottomhalf__answer ul button{
+    font-size: 3rem;
+  }
+}
