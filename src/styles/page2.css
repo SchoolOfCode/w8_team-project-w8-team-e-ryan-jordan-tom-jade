@@ -174,13 +174,13 @@ button:hover {
 
 @media only screen and (min-width: 600px) {
   .page__main__selection--box1:hover{
-    cursor:  url(/src/images/ring-unsplash.png),pointer ;
+    cursor:  url(/src/images/ring-unsplash.png),url(/images/ring-unsplash.png),pointer ;
   }
   .page__main__selection--box2:hover{
-    cursor:  url(/src/images/bbyoda.png),pointer ;
+    cursor:  url(/src/images/bbyoda.png),url(/images/bbyoda.png),pointer ;
   }
   .page__main__selection--box3:hover{
-    cursor:  url(/src/images/pokeballl.png),pointer ;
+    cursor:  url(/src/images/pokeballl.png),url(/images/pokeballl.png),pointer ;
   }
   .page2__main2__tophalf__question,#question{
     font-size:1.9rem ;
